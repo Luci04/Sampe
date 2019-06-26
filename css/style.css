@@ -1,0 +1,288 @@
+body {
+  font-size: 14px;
+  color: #fff;
+
+  font-family: "Handlee", cursive;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  background-size: 400% 400%;
+  animation: Gradient 15 ease infinite;
+}
+
+.media {
+  position: relative;
+  top: 40%;
+  left: 50px;
+  display: block;
+  transform: translate(-50%, -50%);
+}
+
+h4 {
+  padding-top: 5px;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.slides-navigation {
+  z-index: 6;
+}
+
+.slides-navigation .prev,
+.slides-navigation .next {
+  width: 75px;
+  height: 75px;
+  background-repeat: no-repeat;
+  background-size: 200%;
+}
+
+.slides-navigation a.prev {
+  left: 20px;
+  background: url(../images/icons/5.png);
+}
+
+.slides-navigation a.next {
+  right: 20px;
+  background: url(../images/icons/4.png);
+}
+
+.titleMessage {
+  position: absolute;
+  width: 100%;
+  height: 250%;
+  top: 50%;
+  z-index: 5;
+  text-align: center;
+  margin-top: -125px;
+}
+
+.titleMessage .heading p {
+  color: #fff;
+  text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
+  font-weight: 100;
+  letter-spacing: 7px;
+}
+
+.titleMessage .heading .main {
+  font-size: 75px;
+  margin: 0;
+  font-family: "Bad Script", cursive;
+}
+
+.titleMessage .heading .sub {
+  font-size: 50px;
+  font-family: "Handlee", cursive;
+}
+
+.section {
+  padding: 100px 0;
+  background-size: 500%;
+  font-weight: 100;
+}
+
+.aboutImage {
+  max-width: 50%;
+}
+
+.d-block {
+  font-size: 20px;
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+  background-repeat: no-repeat;
+  position: relative;
+  height: 610px;
+  margin-left: auto;
+  margin-right: auto;
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  text-align: center;
+  padding-left: 15px;
+}
+
+.chart canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.chart .percent {
+  color: #000;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.chart .percent:after {
+  content: "%";
+}
+
+#navigation {
+  z-index: 100;
+  width: 100%;
+}
+
+#navigation li {
+  padding: 0 10px;
+}
+
+#navigation li a {
+  color: #fff;
+}
+
+.navbar-toggler-icon {
+  background: url(../images/icons/icons8-xbox-menu-50.png);
+  background-size: 100%;
+}
+
+.fixedNav #navigation {
+  position: fixed;
+  top: 0;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+}
+
+#Icons ul {
+  list-style: none;
+}
+
+#Icons li {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+  box-shadow: 0px 1px 3px rgba(255, 255, 255, 0.3);
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#Icons li a {
+  color: #373737;
+  font-size: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.4s;
+}
+
+#Icons li:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 100%;
+  left: 0%;
+  display: inline-block;
+  position: absolute;
+  transition: 0.3s;
+}
+
+#Icons li:nth-child(1):before {
+  background-color: #3b5998;
+}
+
+#Icons li:nth-child(2):before {
+  background-color: #55acee;
+}
+
+#Icons li:nth-child(3):before {
+  background-color: #e4405f;
+}
+
+#Icons li:nth-child(4):before {
+  background-color: #007bb5;
+}
+
+#Icons li:hover:before {
+  top: 0;
+}
+
+#Icons li a:hover {
+  color: #fff;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.parallax1 {
+  /* The image used */
+  background-image: url("../images/aeroplane-aircraft-airplane-2088203.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/art-background-backlit-333850.jpg");
+  height: 100%;
+  /* Set a specific height */
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* #particles-js {
+   size: 50vh;
+   z-index: 30;
+ } */
+
+.link-1 {
+  transition: 0.3s ease;
+  font-size: 20px;
+  text-decoration: none;
+  border-top: 4px solid dark;
+  border-bottom: 4px solid dark;
+}
+
+.link-1:hover {
+  border-top: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  padding: 6px 0;
+}
+
+.hover07 figure img {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.hover07 figure:hover img {
+  -webkit-filter: blur(0);
+  filter: blur(0);
+}
